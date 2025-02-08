@@ -8,7 +8,6 @@ import {
   AddrChanged as AddrChangedEvent,
   AddressChanged as AddressChangedEvent,
   ABIChanged as ABIChangedEvent,
-  VersionChanged as VersionChangedEvent,
 } from "../generated/PublicResolver/PublicResolver";
 
 import {
@@ -19,7 +18,6 @@ import {
   ContenthashChanged,
   AddrChanged,
   AbiChanged,
-  VersionChanged,
   Account,
   Resolver,
   Domain,
