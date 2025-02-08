@@ -7,7 +7,7 @@
     "PublicResolver": {
       "startBlock": 0
     },
-    "ENSRegistrarController": {
+    "BASERegistrarController": {
       "address": "0x22F17BD536706f9a7614e792c769247c74945B71",
       "startBlock": 0
     },
