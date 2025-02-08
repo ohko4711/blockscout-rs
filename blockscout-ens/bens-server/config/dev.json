@@ -35,6 +35,15 @@
           "d3-connect-shib-testnet"
         ],
         "rpc_url": "https://puppynet.shibrpc.com"
+      },
+      "648": {
+        "blockscout": {
+          "url": "https://explorer-endurance.fusionist.io"
+        },
+        "use_protocols": [
+          "endurance-name-service"
+        ],
+        "rpc_url": "https://rpc-endurance.fusionist.io"
       }
     },
     "protocols": {
@@ -57,6 +66,25 @@
           "native_token_contract": "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85",
           "registry_contract": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e",
           "try_offchain_resolve": true
+        }
+      },
+      "endurance-name-service": {
+        "tld_list": [
+          "ace"
+        ],
+        "network_id": 648,
+        "subgraph_name": "endurance-name-service-subgraph",
+        "address_resolve_technique": "reverse_registry",
+        "specific": {
+          "type": "ens_like",
+          "native_token_contract": "0x21a3b31D37dC590380fcdbA471Dd0293c7019018"
+        },
+        "meta": {
+          "short_name": "ANS",
+          "title": "Endurance Name Service",
+          "description": "Endurance Name Service (ENS) is a decentralized naming service, which allows users to have a readable domain name for their addresses.",
+          "icon_url": "https://i.imgur.com/2ZZT3zl.png",
+          "docs_url": "https://basename.gitbook.io/bns-docs"
         }
       },
       "ens-sepolia": {
