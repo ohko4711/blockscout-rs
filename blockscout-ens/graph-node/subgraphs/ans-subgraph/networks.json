@@ -1,0 +1,20 @@
+{
+  "endurance-mainnet": {
+    "ANSRegistry": {
+      "address": "0xc7054127a7BE821Bd6D4b9Acd7aA2169388F0e87",
+      "startBlock": 0
+    },
+    "PublicResolver": {
+      "startBlock": 0
+    },
+    "ANSRegistrarController": {
+      "address": "0x22F17BD536706f9a7614e792c769247c74945B71",
+      "startBlock": 0
+    },
+    "BaseRegistrarImplementation": {
+      "address": "0x21a3b31D37dC590380fcdbA471Dd0293c7019018",
+      "startBlock": 0
+    },
+    "": ""
+  }
+}

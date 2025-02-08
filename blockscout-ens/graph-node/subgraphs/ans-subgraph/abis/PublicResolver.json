@@ -1,0 +1,830 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_ans",
+        "internalType": "contract ANS"
+      },
+      {
+        "type": "address",
+        "name": "wrapperAddress",
+        "internalType": "contract INameWrapper"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      },
+      {
+        "type": "bytes",
+        "name": "",
+        "internalType": "bytes"
+      }
+    ],
+    "name": "ABI",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "uint256",
+        "name": "contentTypes",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address payable"
+      }
+    ],
+    "name": "addr",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bytes",
+        "name": "",
+        "internalType": "bytes"
+      }
+    ],
+    "name": "addr",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "uint256",
+        "name": "coinType",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "clearDNSZone",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bytes",
+        "name": "",
+        "internalType": "bytes"
+      }
+    ],
+    "name": "contenthash",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bytes",
+        "name": "",
+        "internalType": "bytes"
+      }
+    ],
+    "name": "dnsRecord",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes32",
+        "name": "name",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "uint16",
+        "name": "resource",
+        "internalType": "uint16"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "hasDNSRecords",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes32",
+        "name": "name",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      }
+    ],
+    "name": "interfaceImplementer",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes4",
+        "name": "interfaceID",
+        "internalType": "bytes4"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "isApprovedForAll",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "account",
+        "internalType": "address"
+      },
+      {
+        "type": "address",
+        "name": "operator",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [
+      {
+        "type": "bytes[]",
+        "name": "results",
+        "internalType": "bytes[]"
+      }
+    ],
+    "name": "multicall",
+    "inputs": [
+      {
+        "type": "bytes[]",
+        "name": "data",
+        "internalType": "bytes[]"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      }
+    ],
+    "name": "name",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bytes32",
+        "name": "x",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes32",
+        "name": "y",
+        "internalType": "bytes32"
+      }
+    ],
+    "name": "pubkey",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setABI",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "uint256",
+        "name": "contentType",
+        "internalType": "uint256"
+      },
+      {
+        "type": "bytes",
+        "name": "data",
+        "internalType": "bytes"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setAddr",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "uint256",
+        "name": "coinType",
+        "internalType": "uint256"
+      },
+      {
+        "type": "bytes",
+        "name": "a",
+        "internalType": "bytes"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setAddr",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "address",
+        "name": "a",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setApprovalForAll",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "operator",
+        "internalType": "address"
+      },
+      {
+        "type": "bool",
+        "name": "approved",
+        "internalType": "bool"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setContenthash",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes",
+        "name": "hash",
+        "internalType": "bytes"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setDNSRecords",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes",
+        "name": "data",
+        "internalType": "bytes"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setInterface",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes4",
+        "name": "interfaceID",
+        "internalType": "bytes4"
+      },
+      {
+        "type": "address",
+        "name": "implementer",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setName",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setPubkey",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes32",
+        "name": "x",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes32",
+        "name": "y",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setText",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "string",
+        "name": "key",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "value",
+        "internalType": "string"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setZonehash",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "bytes",
+        "name": "hash",
+        "internalType": "bytes"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "pure",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "supportsInterface",
+    "inputs": [
+      {
+        "type": "bytes4",
+        "name": "interfaceID",
+        "internalType": "bytes4"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      }
+    ],
+    "name": "text",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "string",
+        "name": "key",
+        "internalType": "string"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bytes",
+        "name": "",
+        "internalType": "bytes"
+      }
+    ],
+    "name": "zonehash",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "ABIChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "contentType",
+        "indexed": true
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "AddrChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "a",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "AddressChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "coinType",
+        "indexed": false
+      },
+      {
+        "type": "bytes",
+        "name": "newAddress",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ApprovalForAll",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "owner",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "operator",
+        "indexed": true
+      },
+      {
+        "type": "bool",
+        "name": "approved",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ContenthashChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "bytes",
+        "name": "hash",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "DNSRecordChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "bytes",
+        "name": "name",
+        "indexed": false
+      },
+      {
+        "type": "uint16",
+        "name": "resource",
+        "indexed": false
+      },
+      {
+        "type": "bytes",
+        "name": "record",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "DNSRecordDeleted",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "bytes",
+        "name": "name",
+        "indexed": false
+      },
+      {
+        "type": "uint16",
+        "name": "resource",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "DNSZoneCleared",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "DNSZonehashChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "bytes",
+        "name": "lastzonehash",
+        "indexed": false
+      },
+      {
+        "type": "bytes",
+        "name": "zonehash",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "InterfaceChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "bytes4",
+        "name": "interfaceID",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "implementer",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "NameChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "string",
+        "name": "name",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "PubkeyChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "bytes32",
+        "name": "x",
+        "indexed": false
+      },
+      {
+        "type": "bytes32",
+        "name": "y",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "TextChanged",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "node",
+        "indexed": true
+      },
+      {
+        "type": "string",
+        "name": "indexedKey",
+        "indexed": true
+      },
+      {
+        "type": "string",
+        "name": "key",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  }
+]

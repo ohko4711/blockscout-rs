@@ -1,0 +1,643 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_base",
+        "internalType": "contract BaseRegistrarImplementation"
+      },
+      {
+        "type": "address",
+        "name": "_prices",
+        "internalType": "contract PriceOracle"
+      },
+      {
+        "type": "uint256",
+        "name": "_minCommitmentAge",
+        "internalType": "uint256"
+      },
+      {
+        "type": "uint256",
+        "name": "_maxCommitmentAge",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "name": "MIN_REGISTRATION_DURATION",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "available",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      }
+    ],
+    "name": "burnAddress",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "name": "burnRate",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "commit",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "commitment",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "name": "commitments",
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "couponEnabled",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "pure",
+    "outputs": [
+      {
+        "type": "bytes32",
+        "name": "",
+        "internalType": "bytes32"
+      }
+    ],
+    "name": "makeCommitment",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      },
+      {
+        "type": "address",
+        "name": "owner",
+        "internalType": "address"
+      },
+      {
+        "type": "bytes32",
+        "name": "secret",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "pure",
+    "outputs": [
+      {
+        "type": "bytes32",
+        "name": "",
+        "internalType": "bytes32"
+      }
+    ],
+    "name": "makeCommitmentWithConfig",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      },
+      {
+        "type": "address",
+        "name": "owner",
+        "internalType": "address"
+      },
+      {
+        "type": "bytes32",
+        "name": "secret",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "address",
+        "name": "resolver",
+        "internalType": "address"
+      },
+      {
+        "type": "address",
+        "name": "addr",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "name": "maxCommitmentAge",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "name": "minCommitmentAge",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      }
+    ],
+    "name": "owner",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "register",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      },
+      {
+        "type": "address",
+        "name": "owner",
+        "internalType": "address"
+      },
+      {
+        "type": "uint256",
+        "name": "duration",
+        "internalType": "uint256"
+      },
+      {
+        "type": "bytes32",
+        "name": "secret",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "registerWithConfig",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      },
+      {
+        "type": "address",
+        "name": "owner",
+        "internalType": "address"
+      },
+      {
+        "type": "uint256",
+        "name": "duration",
+        "internalType": "uint256"
+      },
+      {
+        "type": "bytes32",
+        "name": "secret",
+        "internalType": "bytes32"
+      },
+      {
+        "type": "address",
+        "name": "resolver",
+        "internalType": "address"
+      },
+      {
+        "type": "address",
+        "name": "addr",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "renew",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      },
+      {
+        "type": "uint256",
+        "name": "duration",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "renounceOwnership",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "name": "rentPrice",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      },
+      {
+        "type": "uint256",
+        "name": "duration",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setBurnAddress",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_burnAddress",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setBurnRate",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "_burnRate",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setCommitmentAges",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "_minCommitmentAge",
+        "internalType": "uint256"
+      },
+      {
+        "type": "uint256",
+        "name": "_maxCommitmentAge",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setCoupons",
+    "inputs": [
+      {
+        "type": "bool",
+        "name": "_status",
+        "internalType": "bool"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setCouponsContract",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_coupons",
+        "internalType": "contract DiscountCoupons"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setPriceOracle",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_prices",
+        "internalType": "contract PriceOracle"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setWalletAddress",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_walletAddress",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "pure",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "supportsInterface",
+    "inputs": [
+      {
+        "type": "bytes4",
+        "name": "interfaceID",
+        "internalType": "bytes4"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "transferOwnership",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "newOwner",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "pure",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "valid",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "internalType": "string"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      }
+    ],
+    "name": "walletAddress",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "withdraw",
+    "inputs": []
+  },
+  {
+    "type": "event",
+    "name": "AceBurnt",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "amount",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "BurnAddressChanged",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "newBurnAddress",
+        "indexed": true
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "NameRegistered",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "indexed": false
+      },
+      {
+        "type": "bytes32",
+        "name": "label",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "owner",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "cost",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "expires",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "NameRenewed",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "name",
+        "indexed": false
+      },
+      {
+        "type": "bytes32",
+        "name": "label",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "cost",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "expires",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "NewCoupons",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "coupons",
+        "indexed": true
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "NewPriceOracle",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "oracle",
+        "indexed": true
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "OwnershipTransferred",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "previousOwner",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "newOwner",
+        "indexed": true
+      }
+    ],
+    "anonymous": false
+  }
+]
