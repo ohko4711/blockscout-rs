@@ -154,28 +154,6 @@ export function handleInterfaceChanged(event: InterfaceChangedEvent): void {
   resolverEvent.save();
 }
 
-export function handleVersionChanged(event: VersionChangedEvent): void {
-  let resolverEvent = new VersionChanged(createEventID(event));
-  resolverEvent.blockNumber = event.block.number.toI32();
-  resolverEvent.transactionID = event.transaction.hash;
-  resolverEvent.resolver = createResolverID(event.params.node, event.address);
-  resolverEvent.version = event.params.newVersion;
-  resolverEvent.save();
-
-  let domain = Domain.load(event.params.node.toHexString());
-  if (domain && domain.resolver === resolverEvent.resolver) {
-    domain.resolvedAddress = null;
-    domain.save();
-  }
-
-  let resolver = getOrCreateResolver(event.params.node, event.address);
-  resolver.addr = null;
-  resolver.contentHash = null;
-  resolver.texts = null;
-  resolver.coinTypes = null;
-  resolver.save();
-}
-
 function getOrCreateResolver(node: Bytes, address: Address): Resolver {
   let id = createResolverID(node, address);
   let resolver = Resolver.load(id);
