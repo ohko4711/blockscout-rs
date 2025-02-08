@@ -1,13 +1,13 @@
 {
   "endurance-mainnet": {
-    "ANSRegistry": {
+    "ENSRegistry": {
       "address": "0xc7054127a7BE821Bd6D4b9Acd7aA2169388F0e87",
       "startBlock": 0
     },
     "PublicResolver": {
       "startBlock": 0
     },
-    "ANSRegistrarController": {
+    "ENSRegistrarController": {
       "address": "0x22F17BD536706f9a7614e792c769247c74945B71",
       "startBlock": 0
     },
