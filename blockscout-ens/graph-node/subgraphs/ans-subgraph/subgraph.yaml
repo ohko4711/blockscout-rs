@@ -38,7 +38,7 @@ dataSources:
     network: endurance-mainnet
     source:
       abi: PublicResolver
-      address: "0x22F17BD536706f9a7614e792c769247c74945B71"
+      address: "0xfbCC64bFD2119407e4A4126eDaaE9e855011d874"
       startBlock: 0
     mapping:
       kind: ethereum/events
@@ -80,7 +80,7 @@ dataSources:
     network: endurance-mainnet
     source:
       abi: BaseRegistrarImplementation
-      address: "0xaCe5602d169Edeb874bfE584a651801B8ac67093"
+      address: "0x21a3b31D37dC590380fcdbA471Dd0293c7019018"
       startBlock: 0
     mapping:
       kind: ethereum/events
@@ -108,7 +108,7 @@ dataSources:
     network: endurance-mainnet
     source:
       abi: BASERegistrarController
-      address: "0x4079d84889e0E1AC22beec60dc8e5E7b621bf55D"
+      address: "0x22F17BD536706f9a7614e792c769247c74945B71"
       startBlock: 0
     mapping:
       kind: ethereum/events
