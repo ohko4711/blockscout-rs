@@ -49,3 +49,9 @@ provider = [
     { label = "shibarium-testnet", url = "https://puppynet.shibrpc.com", features = [] }
 ]
 shard = "primary"
+
+[chains.endurance-mainnet]
+provider = [
+    { label = "endurance-mainnet", url = "https://rpc-endurance.fusionist.io", features = [] }
+]
+shard = "primary"
