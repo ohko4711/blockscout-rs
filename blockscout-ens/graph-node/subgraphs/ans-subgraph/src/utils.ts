@@ -1,7 +1,7 @@
 import { BigInt, ByteArray, Bytes, crypto, ethereum, log } from "@graphprotocol/graph-ts";
 import { Account, Domain } from "../generated/schema";
 
-export const BASE_NODE_HASH = "0xc3a2b194615fe15824a8c25f10cb10180b5f20e68643314a4bbbf71a88c1ac2a"
+export const BASE_NODE_HASH = "c3a2b194615fe15824a8c25f10cb10180b5f20e68643314a4bbbf71a88c1ac2a"
 export const BASE_NODE =
   ".ace";
 
