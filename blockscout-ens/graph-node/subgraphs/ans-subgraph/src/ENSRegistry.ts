@@ -1,4 +1,4 @@
-import { BigInt, crypto, ens } from "@graphprotocol/graph-ts";
+import { BigInt, crypto, ens, log } from "@graphprotocol/graph-ts";
 
 import {
   NewOwner as NewOwnerEvent,
@@ -29,6 +29,7 @@ function getDomain(
   node: string,
   timestamp: BigInt = BIG_INT_ZERO
 ): Domain | null {
+  log.info("Processing getDomain event for node: {}", [node]);
   let domain = Domain.load(node);
   if (domain === null && node == ROOT_NODE) {
     return createDomain(node, timestamp);
@@ -75,7 +76,19 @@ function _handleNewOwner(event: NewOwnerEvent, isMigrated: boolean): void {
 
   let subnode = makeSubnode(event);
   let domain = getDomain(subnode, event.block.timestamp);
+  log.info("Processing NewOwner event for node: {}", [event.params.node.toHexString()]);
   let parent = getDomain(event.params.node.toHexString());
+  
+  if (parent === null) {
+    log.error("Critical error: Parent domain not found for node {}", [
+      event.params.node.toHexString()
+    ]);
+    return;
+  }
+  
+  log.info("Processing NewOwner event for parent: {}", [parent.id]);
+
+
 
   if (domain === null) {
     domain = new Domain(subnode);

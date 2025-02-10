@@ -14,42 +14,6 @@ indexers = ["default"]
 [chains]
 ingestor = "block_ingestor_node"
 
-[chains.mainnet]
-provider = [
-    { label = "mainnet", url = "https://ethereum-rpc.publicnode.com", features = [] }
-]
-shard = "primary"
-
-[chains.sepolia]
-provider = [
-    { label = "sepolia", url = "https://sepolia.gateway.tenderly.co", features = [] }
-]
-shard = "primary"
-
-[chains.gnosis-chiado]
-provider = [
-    { label = "gnosis-chiado", url = "https://rpc.eu-central-2.gateway.fm/v4/gnosis/archival/chiado", features = [] }
-]
-shard = "primary"
-
-[chains.mode-sepolia]
-provider = [
-    { label = "mode-sepolia", url = "https://sepolia.mode.network", features = [] }
-]
-shard = "primary"
-
-[chains.shibarium]
-provider = [
-    { label = "shibarium", url = "https://www.shibrpc.com", features = [] }
-]
-shard = "primary"
-
-[chains.shibarium-testnet]
-provider = [
-    { label = "shibarium-testnet", url = "https://puppynet.shibrpc.com", features = [] }
-]
-shard = "primary"
-
 [chains.endurance-mainnet]
 provider = [
     { label = "endurance-mainnet", url = "https://rpc-endurance.fusionist.io", features = [] }
