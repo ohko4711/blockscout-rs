@@ -32,7 +32,6 @@ dataSources:
           handler: handleNewResolver
         - event: NewTTL(indexed bytes32,uint64)
           handler: handleNewTTL
-
   - kind: ethereum/contract
     name: PublicResolver
     network: endurance-mainnet
@@ -102,7 +101,6 @@ dataSources:
           handler: handleNameRenewed
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleNameTransferred
-
   - kind: ethereum/contract
     name: BASERegistrarController
     network: endurance-mainnet
