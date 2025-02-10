@@ -9,7 +9,7 @@ dataSources:
     network: endurance-mainnet
     source:
       abi: ENSRegistry
-      address: "0xc7054127a7BE821Bd6D4b9Acd7aA2169388F0e87"
+      address: "0x152764920dfE3B8152779863c5eF407CF7b61a92"
       startBlock: 0
     mapping:
       kind: ethereum/events
@@ -38,7 +38,7 @@ dataSources:
     network: endurance-mainnet
     source:
       abi: PublicResolver
-      address: "0xfbCC64bFD2119407e4A4126eDaaE9e855011d874"
+      address: "0xBC56740a549CE75a039f79Bf4833BbC46fb62e93"
       startBlock: 0
     mapping:
       kind: ethereum/events
