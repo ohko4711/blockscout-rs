@@ -19,6 +19,9 @@ use sqlx::postgres::PgPoolOptions;
 use std::{collections::HashMap, sync::Arc};
 use tokio_cron_scheduler::JobScheduler;
 
+use actix_cors::Cors;
+use actix_web::http::header;
+
 const SERVICE_NAME: &str = "bens";
 
 #[derive(Clone)]
@@ -39,9 +42,18 @@ impl Router {
 
 impl launcher::HttpRouter for Router {
     fn register_routes(&self, service_config: &mut actix_web::web::ServiceConfig) {
-        service_config.configure(|config| route_health(config, self.health.clone()));
-        service_config
-            .configure(|config| route_domains_extractor(config, self.domains_extractor.clone()));
+        let cors = Cors::default()
+            .allow_any_origin()
+            .allowed_methods(vec!["GET", "POST", "PUT", "DELETE", "OPTIONS"])
+            .allowed_headers(vec![header::CONTENT_TYPE, header::AUTHORIZATION])
+            .max_age(3600);
+
+        service_config.service(
+            actix_web::web::scope("")
+                .wrap(cors)
+                .configure(|config| route_health(config, self.health.clone()))
+                .configure(|config| route_domains_extractor(config, self.domains_extractor.clone())),
+        );
     }
 }
 

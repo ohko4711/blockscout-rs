@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 actix-web = { workspace = true }
+actix-cors = "0.6"
 alloy = { workspace = true, features = ["full"] }
 anyhow = { workspace = true }
 async-trait = { workspace = true }
