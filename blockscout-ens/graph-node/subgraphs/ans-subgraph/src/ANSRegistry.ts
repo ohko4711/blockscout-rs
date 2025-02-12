@@ -5,7 +5,7 @@ import {
   Transfer as TransferEvent,
   NewResolver as NewResolverEvent,
   NewTTL as NewTTLEvent
-} from "../generated/ENSRegistry/ENSRegistry"
+} from "../generated/ANSRegistry/ANSRegistry"
 import { NewOwner, Transfer, NewResolver, NewTTL, Domain, Account, Resolver } from "../generated/schema"
 import { EMPTY_ADDRESS, EMPTY_ADDRESS_BYTEARRAY, ROOT_NODE, concat, createEventID } from "./utils";
 
@@ -178,6 +178,11 @@ export function handleNewResolver(event: NewResolverEvent): void {
 
   let node = event.params.node.toHexString();
   let domain = getDomain(node)!;
+    // Skip if domain doesn't exist
+    if (!domain) {
+      log.warning('[HandleNewResolver Domain not found for node {}', [node]);
+      return;
+    }
   domain.resolver = id;
 
   if (id) {

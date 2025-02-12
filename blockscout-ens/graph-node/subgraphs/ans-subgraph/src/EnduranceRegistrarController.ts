@@ -3,7 +3,7 @@ import { BigInt, ByteArray, Bytes, crypto, ens } from "@graphprotocol/graph-ts";
 import {
     NameRegistered as ControllerNameRegisteredEvent,
     NameRenewed as ControllerNameRenewedEvent,
-  } from "../generated/BASERegistrarController/BASERegistrarController";
+  } from "../generated/EnduranceRegistrarController/EnduranceRegistrarController";
   
   import {
     checkValidLabel,

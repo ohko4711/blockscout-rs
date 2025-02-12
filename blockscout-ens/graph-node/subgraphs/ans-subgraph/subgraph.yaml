@@ -5,24 +5,24 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: ENSRegistry
+    name: ANSRegistry
     network: endurance-mainnet
     source:
-      abi: ENSRegistry
+      abi: ANSRegistry
       address: "0x152764920dfE3B8152779863c5eF407CF7b61a92"
       startBlock: 0
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
       language: wasm/assemblyscript
-      file: ./src/ENSRegistry.ts
+      file: ./src/ANSRegistry.ts
       entities:
         - Domain
         - Account
         - Resolver
       abis:
-        - name: ENSRegistry
-          file: ./abis/ENSRegistry.json
+        - name: ANSRegistry
+          file: ./abis/ANSRegistry.json
       eventHandlers:
         - event: Transfer(indexed bytes32,address)
           handler: handleTransfer
@@ -75,25 +75,25 @@ dataSources:
         - event: TextChanged(indexed bytes32,indexed string,string)
           handler: handleTextChanged
   - kind: ethereum/contract
-    name: BaseRegistrarImplementation
+    name: EnduranceRegistrarImplementation
     network: endurance-mainnet
     source:
-      abi: BaseRegistrarImplementation
+      abi: EnduranceRegistrarImplementation
       address: "0x21a3b31D37dC590380fcdbA471Dd0293c7019018"
       startBlock: 0
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
       language: wasm/assemblyscript
-      file: ./src/BaseRegistrarImplementation.ts
+      file: ./src/EnduranceRegistrarImplementation.ts
       entities:
         - Registration
         - NameRegistered
         - NameRenewed
         - NameTransferred
       abis:
-        - name: BaseRegistrarImplementation
-          file: ./abis/BaseRegistrarImplementation.json
+        - name: EnduranceRegistrarImplementation
+          file: ./abis/EnduranceRegistrarImplementation.json
       eventHandlers:
         - event: NameRegistered(indexed uint256,indexed address,uint256)
           handler: handleNameRegistered
@@ -102,22 +102,22 @@ dataSources:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleNameTransferred
   - kind: ethereum/contract
-    name: BASERegistrarController
+    name: EnduranceRegistrarController
     network: endurance-mainnet
     source:
-      abi: BASERegistrarController
+      abi: EnduranceRegistrarController
       address: "0x22F17BD536706f9a7614e792c769247c74945B71"
       startBlock: 0
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
       language: wasm/assemblyscript
-      file: ./src/BASERegistrarController.ts
+      file: ./src/EnduranceRegistrarController.ts
       entities:
         - Registration
       abis:
-        - name: BASERegistrarController
-          file: ./abis/BASERegistrarController.json
+        - name: EnduranceRegistrarController
+          file: ./abis/EnduranceRegistrarController.json
       eventHandlers:
         - event: NameRegistered(string,indexed bytes32,indexed address,uint256,uint256)
           handler: handleNameRegisteredByController
