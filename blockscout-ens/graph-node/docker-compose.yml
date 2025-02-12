@@ -26,7 +26,7 @@ services:
       - ./config.toml:/root/config.toml
   ipfs:
     container_name: gn-ipfs-dev
-    image: ipfs/kubo:v0.33.1
+    image: ipfs/kubo:v0.14.0
     ports:
       - '5001:5001'
     environment:
