@@ -37,9 +37,6 @@ graph-node-stop:
 
 deploy-subgraph *args:
     (cd graph-node/deployer && python3 deployer.py {{args}})
-    sleep 10
-    ./graph-node/makeup.legacy.sh
-
 
 stop-test-postgres:
     just docker-name="{{docker-name}}-test" stop-postgres
