@@ -10,7 +10,7 @@ dataSources:
     source:
       abi: ANSRegistry
       address: "0x152764920dfE3B8152779863c5eF407CF7b61a92"
-      startBlock: 0
+      startBlock: 2480090
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -38,7 +38,7 @@ dataSources:
     source:
       abi: PublicResolver
       address: "0xBC56740a549CE75a039f79Bf4833BbC46fb62e93"
-      startBlock: 0
+      startBlock: 2480090
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -80,7 +80,7 @@ dataSources:
     source:
       abi: EnduranceRegistrarImplementation
       address: "0x21a3b31D37dC590380fcdbA471Dd0293c7019018"
-      startBlock: 0
+      startBlock: 2480090
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -107,7 +107,7 @@ dataSources:
     source:
       abi: EnduranceRegistrarController
       address: "0x22F17BD536706f9a7614e792c769247c74945B71"
-      startBlock: 0
+      startBlock: 2480090
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
