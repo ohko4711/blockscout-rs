@@ -83,8 +83,8 @@
           "short_name": "ANS",
           "title": "Endurance Name Service",
           "description": "Endurance Name Service (ENS) is a decentralized naming service, which allows users to have a readable domain name for their addresses.",
-          "icon_url": "https://i.imgur.com/2ZZT3zl.png",
-          "docs_url": "https://basename.gitbook.io/bns-docs"
+          "icon_url": "https://app.acedomains.io/color-logo.png",
+          "docs_url": "https://www.acedomains.io/"
         }
       },
       "ens-sepolia": {
